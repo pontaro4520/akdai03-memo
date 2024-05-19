@@ -553,3 +553,16 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}

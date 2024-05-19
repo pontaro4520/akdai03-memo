@@ -3,18 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>鋼材重量計算ツール ver.2</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-    <div class="test"></div>
+
+    <header>
+        <h1 class="text-xl flex justify-center">鋼材重量計算ツール</h1>
+
+    </header>
     
+    <main>
+        <div class="input-area">
+            <p>材質は・・・？</p>
+            <span id="material">
+            <input type="radio" name="m" id="m1" value="st">
+            <label for="m1">鉄</label>
+            <input type="radio" name="m" id="m2" value="ss">
+            <label for="m2">ステンレス</label>
+            <input type="radio" name="m" id="m3" value="al">
+            <label for="m3">アルミ</label>
+            </span>
+      
+            <br>
+            <p>形状は・・・？</p>
+            <span id="form">
+            <input type="radio" class="f" name="f" id="f1" value="s">
+            <label for="f1">平板</label>
+            <input type="radio" class="f" name="f" id="f2" value="sP">
+            <label for="f2">角パイプ</label>
+            <input type="radio" class="f" name="f" id="f3" value="rP">
+            <label for="f3">丸パイプ</label>
+            <input type="radio" class="f" name="f" id="f4" value="sB">
+            <label for="f4">フラットバー</label>
+            <input type="radio" class="f" name="f" id="f5" value="rB">
+            <label for="f5">丸棒</label>
+            </span>
+
+            
+
+
+        </>
+    
+        <div class="button-area">
+          <button id="save">セーブ</button>
+          <button id="allclear">全て削除</button>
+        </div>
+      </main>
+
+
+  <ul id="list">
+    <!-- ここに追加データが挿入される -->
+  </ul>
+
+
+
 </body>
 
-<script>
+
 <!-- jqueryの読み込み（記述）が絶対に先！！！ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- js/main.jsは絶対にjqueryの後 -->
     <script src="js/main.js"></script>
-</script>
+
 </html>
